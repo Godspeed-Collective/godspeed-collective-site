@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Godspeed Media</title>
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/godspeed_media.css">
+</head>
+<body>
+  <header id="navbar">
+    <div class="brand">
+      <img src="assets/images/logo-icon.png" alt="Logo" class="logo-icon">
+      <img src="assets/images/logo-text.png" alt="Godspeed Collective" class="logo-text">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="godspeed_media.html">Media</a>
+      <a href="#">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main style="margin-top: 80px;">
+
+    <!-- Hero Section -->
+    <section class="media-hero">
+      <h1>Godspeed Media</h1>
+      <p class="tagline">We Capture Your Visions</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="media-about">
+      <h2>About</h2>
+      <p>Godspeed Media is the visual arm of the Godspeed movement — run by Ethan and built on the passion for telling stories through a lens.</p>
+      <p>Though our roots are in car culture, our vision expands far beyond it. We aim to produce content that resonates, connects, and elevates — from builds to brands, crews to creatives.</p>
+      <p>Professional yet approachable, we bring direction and energy to every session.</p>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="media-gallery-group">
+      <h2>Photos</h2>
+
+      <!-- Car Photos -->
+      <div class="carousel-row">
+        <h3>Cars</h3>
+        <div class="carousel-wrapper">
+          <button class="carousel-btn left" onclick="scrollCarousel(this, -1)">&#8249;</button>
+          <div class="carousel-track car-photos">
+            <!-- Replace with real car images later -->
+            <img src="assets/images/car1.jpg" alt="Car 1">
+            <img src="assets/images/car2.jpg" alt="Car 2">
+            <img src="assets/images/car3.jpg" alt="Car 3">
+          </div>
+          <button class="carousel-btn right" onclick="scrollCarousel(this, 1)">&#8250;</button>
+        </div>
+      </div>
+
+      <!-- People Portraits -->
+      <div class="carousel-row">
+        <h3>People</h3>
+        <div class="carousel-wrapper">
+          <button class="carousel-btn left" onclick="scrollCarousel(this, -1)">&#8249;</button>
+          <div class="carousel-track people-photos">
+            <img src="assets/images/portrait1.jpg" alt="Portrait 1">
+            <img src="assets/images/portrait2.jpg" alt="Portrait 2">
+            <img src="assets/images/portrait3.jpg" alt="Portrait 3">
+          </div>
+          <button class="carousel-btn right" onclick="scrollCarousel(this, 1)">&#8250;</button>
+        </div>
+      </div>
+
+      <!-- Cinematic Landscape -->
+      <div class="carousel-row">
+        <h3>Cinematic</h3>
+        <div class="carousel-wrapper">
+          <button class="carousel-btn left" onclick="scrollCarousel(this, -1)">&#8249;</button>
+          <div class="carousel-track cinematic-photos">
+            <img src="assets/images/cinema1.jpg" alt="Cinema 1">
+            <img src="assets/images/cinema2.jpg" alt="Cinema 2">
+            <img src="assets/images/cinema3.jpg" alt="Cinema 3">
+          </div>
+          <button class="carousel-btn right" onclick="scrollCarousel(this, 1)">&#8250;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Gallery Section -->
+    <section class="media-video-group">
+      <h2>Videos</h2>
+
+      <!-- Portrait Videos -->
+      <div class="carousel-row">
+        <h3>Portrait</h3>
+        <div class="carousel-wrapper">
+          <button class="carousel-btn left" onclick="scrollCarousel(this, -1)">&#8249;</button>
+          <div class="carousel-track portrait-videos">
+            <video src="assets/videos/portrait1.mp4" controls muted></video>
+            <video src="assets/videos/portrait2.mp4" controls muted></video>
+            <video src="assets/videos/portrait3.mp4" controls muted></video>
+          </div>
+          <button class="carousel-btn right" onclick="scrollCarousel(this, 1)">&#8250;</button>
+        </div>
+      </div>
+
+      <!-- Landscape Videos -->
+      <div class="carousel-row">
+        <h3>Cinematic</h3>
+        <div class="carousel-wrapper">
+          <button class="carousel-btn left" onclick="scrollCarousel(this, -1)">&#8249;</button>
+          <div class="carousel-track landscape-videos">
+            <video src="assets/videos/landscape1.mp4" controls muted></video>
+            <video src="assets/videos/landscape2.mp4" controls muted></video>
+            <video src="assets/videos/landscape3.mp4" controls muted></video>
+          </div>
+          <button class="carousel-btn right" onclick="scrollCarousel(this, 1)">&#8250;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="media-booking">
+      <h2>Book a Session</h2>
+      <p>We’re ready when you are. From photos to motion, let’s turn your ideas into work that speaks volumes.</p>
+      <a href="#" class="book-now-button">Book Now</a>
+    </section>
+
+    <!-- Personal Socials CTA -->
+    <section class="media-personal-socials">
+      <h2>Connect with Ethan</h2>
+      <p>Follow me on social media to see more personal projects and behind-the-scenes content.</p>
+      <div class="social-buttons">
+        <a href="#" class="personal-instagram">Instagram</a>
+        <a href="#" class="personal-tiktok">TikTok</a>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 Godspeed Media</p>
+  </footer>
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        navbar.style.top = "-80px";
+      } else {
+        navbar.style.top = "0";
+      }
+      lastScrollTop = scrollTop;
+    });
+  </script>
+<script>
+  function scrollCarousel(button, direction) {
+    const track = button.parentElement.querySelector(".carousel-track");
+    const scrollAmount = direction * (track.clientWidth * 0.8);
+    track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  }
+
+</script>
+</body>
+</html>

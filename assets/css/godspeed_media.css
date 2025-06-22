@@ -1,0 +1,188 @@
+body {
+  background-color: #111;
+  color: #f5f5f5;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.75;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5rem 2rem;
+}
+
+.media-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('../images/media-hero-placeholder.jpg') center center/cover no-repeat;
+  text-align: center;
+  padding: 8rem 2rem;
+  color: #e6ffe6;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.media-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.media-hero .tagline {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #c3ffc3;
+}
+
+.media-about {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.media-about h2 {
+  font-size: 2rem;
+  color: #a7ffb5;
+  margin-bottom: 1rem;
+}
+
+.media-about p {
+  margin-bottom: 1.5rem;
+}
+
+.media-booking {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.media-booking h2 {
+  font-size: 2rem;
+  color: #9ad1d4;
+  margin-bottom: 1rem;
+}
+
+.media-booking p {
+  margin-bottom: 2rem;
+}
+
+.book-now-button {
+  background-color: #9ad1d4;
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+  background-color: #77bbc0;
+}
+
+/* ----- Carousel Layout Styles ----- */
+.media-gallery-group, .media-video-group {
+  margin-top: 4rem;
+  padding: 3rem 2rem;
+  background-color: #151515;
+  border-top: 1px solid #333;
+}
+
+.media-gallery-group h2, .media-video-group h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #e6ffe6;
+  margin-bottom: 2rem;
+}
+
+.carousel-row {
+  margin-bottom: 4rem;
+}
+
+.carousel-row h3 {
+  font-size: 1.4rem;
+  color: #b4ffe0;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* Carousel wrapper and scroll behavior */
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.carousel-track img,
+.carousel-track video {
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.car-photos img {
+  height: auto;
+  max-height: 200px;
+  width: auto;
+}
+
+.people-photos img {
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+}
+
+.cinematic-photos img {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.portrait-videos video {
+  height: 320px;
+  width: 180px;
+  object-fit: cover;
+}
+
+.landscape-videos video {
+  height: 240px;
+  width: 400px;
+  object-fit: cover;
+}
+
+/* Carousel Arrows */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-btn:hover {
+  opacity: 1;
+  background-color: #555;
+}
+
+.carousel-btn.left {
+  left: 0;
+}
+
+.carousel-btn.right {
+  right: 0;
+}
+
+/* Scrollbar Hidden (except on hover if desired) */

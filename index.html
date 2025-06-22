@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Godspeed Collective</title>
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+
+</head>
+
+<body>
+
+  <header id="navbar">
+    <div class="brand">
+      <img src="assets/images/logo-icon.png" alt="Logo" class="logo-icon">
+      <img src="assets/images/logo-text.png" alt="Godspeed Collective" class="logo-text">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="godspeed_media.html">Media</a>
+      <a href="#">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main style="margin-top: 80px;">
+
+    <!-- Hero Section with full width background -->
+    <section class="hero-section">
+      <div class="hero-overlay">
+        <h1>We Ride With the Gods</h1>
+        <p>Godspeed Collective is a group for everyone to be respected and loved. We don't discriminate, we accept. (Except civics, #CIVICHATE)</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <h2>Welcome to Godspeed Collective</h2>
+      <p>Godspeed Collective is a lifestyle brand rooted in car culture, media, and community.</p>
+      <p>Godspeed Collective is a lot of things. We are a crew with the Godspeed Collective Team. We are a brand. We are an inspiration. And we want to make it global.</p>
+    </section>
+
+    <!-- Social Cards -->
+    <section class="social-cards">
+      <h2>Connect with Us</h2>
+      <p>We want people to use <strong>#godspeedcollective</strong>. We’re looking for collabs, for friends, and for family. We want our followers to notice each other, not just us.</p>
+      <div class="cards-container">
+        <a href="https://instagram.com" target="_blank" class="social-card instagram">Instagram</a>
+        <a href="https://tiktok.com" target="_blank" class="social-card tiktok">TikTok</a>
+        <a href="https://youtube.com" target="_blank" class="social-card youtube">YouTube</a>
+        <a href="https://facebook.com" target="_blank" class="social-card facebook">Facebook</a>
+        <a href="#" class="social-card shopify">Shopify</a>
+      </div>
+    </section>
+
+    <!-- Merch Section -->
+    <section class="merch-section">
+      <h2>Featured Merch</h2>
+      <p>The Classic Godspeed Collective Line is just the beginning — comfort-driven tees, hoodies, and hats made to represent the crew. We're starting simple but dreaming big.</p>
+      <div class="cards-container">
+        <a href="#" class="merch-card">Merch Item 1</a>
+        <a href="#" class="merch-card">Merch Item 2</a>
+        <a href="#" class="merch-card">Merch Item 3</a>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section">
+      <h2>Upcoming Events</h2>
+      <p>We don’t host events just yet — but we’re coming. When we’re ready, expect sanctioned meets, random chill pop-ups, massive cruises, and more. Run by the Godspeed Collective Team.</p>
+      <a href="https://calendar.google.com/calendar/u/0?cid=YOUR_CALENDAR_ID" target="_blank" class="calendar-button">Add Godspeed Collective Calendar</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Godspeed Collective</p>
+  </footer>
+
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop === 0) {
+        // Always show navbar at very top
+        navbar.style.top = "0";
+      } else if (scrollTop > lastScrollTop) {
+        // Scroll down - hide navbar
+        navbar.style.top = "-80px";
+      } else {
+        // Scroll up - show navbar
+        navbar.style.top = "0";
+      }
+      
+      lastScrollTop = scrollTop;
+    });
+  </script>
+
+
+</body>
+
+</html>

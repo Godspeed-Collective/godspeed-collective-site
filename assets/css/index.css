@@ -1,0 +1,167 @@
+/* HERO SECTION */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('assets/images/hero-placeholder.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1F3B2C;
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero-overlay {
+  padding: 0 1rem;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-section p {
+  margin-bottom: 1rem;
+}
+
+/* COMMON CARDS CONTAINER */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 1.5rem 0 3rem;
+}
+
+/* SOCIAL CARDS */
+.social-card {
+  background-color: #1F3B2C;
+  color: #fff;
+  text-decoration: none;
+  width: 140px;
+  height: 100px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 6px rgba(255, 106, 0, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-card:hover {
+  background-color: #B34728;
+  color: #fff;
+  box-shadow: 0 6px 12px rgba(255, 106, 0, 0.6);
+}
+
+/* Optionally add brand colors */
+.social-card.instagram:hover { background-color: #E1306C; color: #fff; }
+.social-card.tiktok:hover { background-color: #69C9D0; color: #111; }
+.social-card.youtube:hover { background-color: #FF0000; color: #fff; }
+.social-card.facebook:hover { background-color: #1877F2; color: #fff; }
+.social-card.shopify:hover { background-color: #96bf48; color: #111; }
+
+/* MERCH CARDS */
+.merch-card {
+  background-color: #2B1B17;
+  color: #fff;
+  text-decoration: none;
+  width: 180px;
+  height: 220px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.merch-card:hover {
+  background-color: #B34728;
+  box-shadow: 0 6px 16px rgba(255, 106, 0, 0.6);
+  color: #fff;
+}
+
+/* EVENTS SECTION */
+.events-section {
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.events-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-button {
+  display: inline-block;
+  background-color: #1F3B2C;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 24px;
+  box-shadow: 0 4px 8px rgba(255, 106, 0, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.calendar-button:hover {
+  background-color: #8E3B1E;
+  box-shadow: 0 6px 12px rgba(204, 84, 0, 0.6);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .hero-section {
+    font-size: 2.2rem;
+    height: 40vh;
+  }
+  .social-card, .merch-card {
+    width: 130px;
+    height: 90px;
+    font-size: 1rem;
+  }
+  .merch-card {
+    height: 160px;
+  }
+}
+
+/* Add padding and spacing to all sections */
+section {
+  padding: 6rem 2rem;
+}
+
+/* Text Shadows & Minor Style Polish */
+h1, h2 {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+body {
+  font-size: 1.15rem;
+  line-height: 1.75;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
