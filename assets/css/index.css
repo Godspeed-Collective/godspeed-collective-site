@@ -23,7 +23,6 @@
 
 /* ABOUT SECTION */
 .about-section {
-  color: #fff;
   max-width: 900px;
   margin: 3rem auto;
   padding: 0 1rem;
@@ -34,6 +33,7 @@
 
 .about-section p {
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 /* COMMON CARDS CONTAINER */
