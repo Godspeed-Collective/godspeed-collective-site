@@ -15,10 +15,16 @@
   letter-spacing: 0.1em;
   text-align: center;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  padding: 0 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .hero-overlay {
-  padding: 0 1rem;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  word-wrap: break-word;
 }
 
 /* ABOUT SECTION */
@@ -137,16 +143,19 @@
 /* Responsive Adjustments */
 @media (max-width: 600px) {
   .hero-section {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     height: 35vh;
     padding: 1rem;
-    text-align: center;
     justify-content: center;
   }
 
   .hero-overlay {
     width: 100%;
+    max-width: 90%;
     text-align: center;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   .social-card, .merch-card {
