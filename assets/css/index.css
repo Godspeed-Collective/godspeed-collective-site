@@ -137,9 +137,15 @@
 /* Responsive Adjustments */
 @media (max-width: 600px) {
   .hero-section {
-    font-size: 2rem;
-    height: 40vh;
-    padding: 1.5rem 1rem;
+    font-size: 1.5rem;
+    height: 35vh;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-overlay {
+    width: 100%;
     text-align: center;
   }
 
@@ -160,6 +166,8 @@
     font-size: 1rem;
     line-height: 1.5;
     padding: 0 1rem;
+    text-align: center;
+    margin: 0 auto;
   }
 
   section {
@@ -167,11 +175,11 @@
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   p {
