@@ -160,7 +160,7 @@
   }
 
   section {
-    padding: 3rem 1rem;
+    padding: 3rem 1rem !important;
   }
 
   h1 {
