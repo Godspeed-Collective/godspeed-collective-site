@@ -46,7 +46,7 @@
   font-size: 2rem;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  color: #FFA756;
+  color: #8E3B1E;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -55,12 +55,12 @@
 .divider {
   width: 100%;
   height: 4px;
-  background: linear-gradient(to right, #FFA756, #8E3B1E, #1F3B2C);
+  background: linear-gradient(to right, #8E3B1E, #B34728, #1F3B2C);
   margin: 1rem 0 2rem;
 }
 
 .highlight {
-  color: #FFA756;
+  color: #8E3B1E;
   font-weight: 700;
 }
 
