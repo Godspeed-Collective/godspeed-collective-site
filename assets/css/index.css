@@ -42,6 +42,28 @@
   color: #fff;
 }
 
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: #FFA756;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.divider {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #FFA756, #8E3B1E, #1F3B2C);
+  margin: 1rem 0 2rem;
+}
+
+.highlight {
+  color: #FFA756;
+  font-weight: 700;
+}
+
 /* COMMON CARDS CONTAINER */
 .cards-container {
   display: flex;
