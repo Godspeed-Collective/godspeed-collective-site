@@ -1,0 +1,5 @@
+cd ~/Documents/GitHub/godspeed-collective-site
+python3 -m http.server
+
+then:
+http://localhost:8000/godspeed_media.html
