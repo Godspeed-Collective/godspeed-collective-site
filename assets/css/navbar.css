@@ -1,4 +1,105 @@
-/* NAVBAR STYLES - Shared across all pages */
+
+nav {
+  background-color: #111;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.logo-icon {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.nav-links a:hover {
+  background-color: #333;
+  color: #ff6a00;
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger:hover {
+    background-color: #ff6a00;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #111;
+  padding: 1rem;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.mobile-menu a:hover {
+    background-color: #333;
+    color: #ff6a00;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+}
+
+
+/* NAVBAR STYLES - Shared across all pages 
 #navbar {
   position: fixed;
   top: 0;
@@ -64,7 +165,7 @@ nav a:hover {
   font-size: 1.4rem;
   font-weight: 600;
   background: linear-gradient(90deg, #7A2E1A, #8E3B1E);
-  -webkit-background-clip: text;
+  /*-webkit-background-clip: text;*/
   -webkit-text-fill-color: transparent;
   display: inline-block;
   line-height: 1;
