@@ -1,3 +1,13 @@
+body {
+  background-color: #0A0A0A;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.75;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+
 /* HERO SECTION */
 .hero-section {
   position: relative;
@@ -16,7 +26,7 @@
   text-align: center;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
   padding: 0 1rem;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
   overflow: hidden;
 }
 
@@ -266,16 +276,6 @@ section {
 /* Text Shadows & Minor Style Polish */
 h1, h2 {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-}
-
-body {
-  background-color: #0A0A0A;
-  color: #fff;
-  font-family: 'Helvetica Neue', sans-serif;
-  line-height: 1.75;
-  font-size: 1.1rem;
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
