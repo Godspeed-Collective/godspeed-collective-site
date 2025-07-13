@@ -19,12 +19,13 @@
       <img src="assets/images/logo.PNG" alt="Logo" class="logo-icon">
       <span class="logo-text-css">Godspeed Collective</span>
     </div>
-    <nav>
+    <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+    <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="godspeed_media.html">Media</a>
       <a href="https://shop.godspeedcollective.com/">Shop</a>
       <a href="contact.html">Contact</a>
-    </nav>
+    </div>
   </header>
 
   <main style="margin-top: 80px;">
@@ -127,6 +128,15 @@
   }, { threshold: 0.1 });
 
   revealElements.forEach(el => observer.observe(el));
+</script>
+
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
 </script>
 
 </body>
