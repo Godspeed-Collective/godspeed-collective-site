@@ -1,11 +1,26 @@
 
-nav {
-  background-color: #111;
-  color:white;
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  z-index: 999;
+  transition: top 0.3s;
+  border-bottom: 1px solid #222;
+  /*box-sizing: border-box;*/
+}
+
+nav {
+  background-color: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .brand {
@@ -23,6 +38,14 @@ nav {
 .nav-links {
   display: flex;
   gap: 1rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto; /* pushes the whole container to the right */
+  margin-right: 1.85rem;
 }
 
 .nav-links a {
@@ -165,7 +188,7 @@ nav a:hover {
   font-size: 1.4rem;
   font-weight: 600;
   background: linear-gradient(90deg, #7A2E1A, #8E3B1E);
-  /*-webkit-background-clip: text;*/
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
   line-height: 1;

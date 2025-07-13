@@ -1,95 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | Godspeed Collective</title>
-  <link rel="stylesheet" href="assets/css/navbar.css">
-  <link rel="stylesheet" href="assets/css/contact.css">
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
-</head>
-<body>
-  <header id="navbar">
-    <div class="brand">
-      <img src="assets/images/logo.png" alt="Logo" class="logo-icon">
-      <span class="logo-text-css">Godspeed Collective</span>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="godspeed_media.html">Media</a>
-      <a href="https://shop.godspeedcollective.com/">Shop</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <main style="margin-top: 80px;">
-    <section class="contact-section">
-      <h2>Contact Godspeed Collective</h2>
-      <p>Have questions, ideas, or want to collaborate with the team? Reach out — we’d love to hear from you.</p>
-      
-      <div class="contact-cards">
-        <div class="contact-card youtube-card">
-          <img src="assets/images/youtube-logo.png" alt="YouTube Logo" class="contact-card-image">
-          <div class="contact-card-content">
-            <h3>YouTube</h3>
-            <p>Subscribe to our channel for the latest Godspeed Collective videos.</p>
-            <a href="https://youtube.com/" target="_blank" class="contact-card-button">Visit YouTube</a>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact | Godspeed Collective</title>
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+  </head>
+
+  <body>
+
+    <!--<header id="navbar">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Logo" class="logo-icon">
+        <span class="logo-text-css">Godspeed Collective</span>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="godspeed_media.html">Media</a>
+        <a href="https://shop.godspeedcollective.com/">Shop</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>-->
+
+    <header id="navbar">
+
+      <nav>
+
+        <div class="brand">
+          <img src="assets/images/logo.png" alt="Logo" class="logo-icon">
+          <span class="logo-text-css">Godspeed Collective</span>
         </div>
 
-        <div class="contact-card instagram-card">
-          <img src="assets/images/instagram-logo.png" alt="Instagram Logo" class="contact-card-image">
-          <div class="contact-card-content">
-            <h3>Instagram</h3>
-            <p>Follow us on Instagram for behind-the-scenes content and daily updates.</p>
-            <a href="https://instagram.com/" target="_blank" class="contact-card-button">Visit Instagram</a>
+        <div class="nav-right">
+
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="godspeed_media.html">Media</a>
+            <a href="https://shop.godspeedcollective.com/">Shop</a>
+            <a href="contact.html">Contact</a>
           </div>
+
+          <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
         </div>
 
-        <div class="contact-card tiktok-card">
-          <img src="assets/images/tiktok-logo.png" alt="TikTok Logo" class="contact-card-image">
-          <div class="contact-card-content">
-            <h3>TikTok</h3>
-            <p>Check out our TikTok for quick hits of Godspeed Collective culture.</p>
-            <a href="https://tiktok.com/" target="_blank" class="contact-card-button">Visit TikTok</a>
-          </div>
-        </div>
+      </nav>
+
+      <div id="mobileMenu" class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="godspeed_media.html">Media</a>
+        <a href="https://shop.godspeedcollective.com/">Shop</a>
+        <a href="contact.html">Contact</a>
       </div>
 
-      <form action="mailto:support@godspeedcollective.com" method="post" enctype="text/plain" class="contact-form">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </header>
 
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <main style="margin-top: 80px;">
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+      <section class="contact-section">
 
-        <button type="submit">Send Message</button>
-      </form>
+        <h2>Contact Godspeed Collective</h2>
+        <p>Have questions, ideas, or want to collaborate with the team? Reach out — we’d love to hear from you.</p>
+      
+        <div class="contact-cards">
 
-      <p class="contact-outro">You can also message us directly on any of our platforms — we’re always down to connect with fellow enthusiasts, creatives, and supporters.</p>
-    </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Godspeed Collective</p>
-  </footer>
+          <div class="contact-card youtube-card">
+            <img src="assets/images/youtube-logo.png" alt="YouTube Logo" class="contact-card-image">
 
-  <script>
-    let lastScrollTop = 0;
-    const navbar = document.getElementById("navbar");
+            <div class="contact-card-content">
+              <h3>YouTube</h3>
+              <p>Subscribe to our channel for the latest Godspeed Collective videos.</p>
+              <a href="https://youtube.com/" target="_blank" class="contact-card-button">Visit YouTube</a>
+            </div>
 
-    window.addEventListener("scroll", function () {
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop) {
-        navbar.style.top = "-80px";
-      } else {
-        navbar.style.top = "0";
-      }
-      lastScrollTop = scrollTop;
-    });
-  </script>
-</body>
+          </div>
+
+          <div class="contact-card instagram-card">
+            <img src="assets/images/instagram-logo.png" alt="Instagram Logo" class="contact-card-image">
+
+            <div class="contact-card-content">
+              <h3>Instagram</h3>
+              <p>Follow us on Instagram for behind-the-scenes content and daily updates.</p>
+              <a href="https://instagram.com/" target="_blank" class="contact-card-button">Visit Instagram</a>
+            </div>
+
+          </div>
+
+          <div class="contact-card tiktok-card">
+            <img src="assets/images/tiktok-logo.png" alt="TikTok Logo" class="contact-card-image">
+
+            <div class="contact-card-content">
+              <h3>TikTok</h3>
+              <p>Check out our TikTok for quick hits of Godspeed Collective culture.</p>
+              <a href="https://tiktok.com/" target="_blank" class="contact-card-button">Visit TikTok</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <form action="mailto:support@godspeedcollective.com" method="post" enctype="text/plain" class="contact-form">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <p class="contact-outro">You can also message us directly on any of our platforms — we’re always down to connect with fellow enthusiasts, creatives, and supporters.</p>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Godspeed Collective</p>
+    </footer>
+
+    <script>
+      let lastScrollTop = 0;
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-80px";
+        } else {
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
+
+  </body>
+
 </html>
