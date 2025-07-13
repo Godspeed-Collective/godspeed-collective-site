@@ -162,6 +162,24 @@
   box-shadow: 0 6px 12px rgba(204, 84, 0, 0.6);
 }
 
+/*divider image */
+.section-image-divider {
+  width: 100%;
+  max-width: 100%;
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.section-image-divider img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
 /* Responsive Adjustments */
 @media (max-width: 600px) {
   .hero-section {
