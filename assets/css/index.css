@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   color: #1F3B2C;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -204,7 +204,7 @@
   }
 
   .hero-overlay h1 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
     line-height: 1.2;
     word-break: break-word;
